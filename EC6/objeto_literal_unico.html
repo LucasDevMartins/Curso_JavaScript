@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			let assinatura = {
+				idCliente: 1000,
+				descricao: 'Acesso a internet',
+				status() {
+					console.log('Ativo')
+				}
+			}
+
+			console.log(assinatura.descricao)
+
+			let y = assinatura
+
+			console.log(y.descricao)
+
+			///
+			y.descricao = 'Internet + tv + telefone'
+
+			console.log(assinatura.descricao)
+			console.log(y.descricao)
+
+		</script>
+
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>

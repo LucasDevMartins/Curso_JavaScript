@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			// requisição http
+			// resposta http
+			let Bicicleta1 = {
+				cor: 'Branca',
+				marcha: 'única',
+				aro: 12,
+				pedalar() {
+					console.log('Método pedalar executado')
+				}
+			}
+
+			let Bicicleta2 = {
+				cor: 'Roxo',
+				marcha: 18,
+				aro: 26,
+				pedalar() {
+					console.log('Método pedalar executado')
+				}
+			}
+
+			console.log(Bicicleta1)
+			console.log(Bicicleta2)
+
+			//------------------------------------------
+			let BicicletaFactory = function(cor, marcha, aro) {
+				return {
+					cor,
+					marcha,
+					aro,
+					tipoPedal: 'esportivo',
+					pedalar() {console.log('Método pedalar executado') }
+				}
+			}
+
+			let Bicicleta3 = BicicletaFactory('Vermelha', '18', 26)
+			let Bicicleta4 = BicicletaFactory('Azul', '21', 28)
+			console.log(Bicicleta3)
+			console.log(Bicicleta4)
+
+			//console.log(`Cor: ${Bicicleta3.cor}`)
+			//Bicicleta3.pedalar()
+		</script>
+
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
