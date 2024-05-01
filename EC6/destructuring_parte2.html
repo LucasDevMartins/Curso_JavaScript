@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			let produto = {
+				descricao: 'Notebook',
+				preco: 1800,
+				detalhes: {
+					fabricante: 'abc',
+					modelo: undefined
+				}
+			}
+
+			//token varia:
+			// array => []
+			//objeto => {}
+
+			//let { descricao, preco } = produto
+
+			//let { descricao: d, preco: p } = produto
+
+			//let { descricao: d, preco: p, desconto } = produto
+
+			//let { descricao: d, preco: p = 1500, desconto = 5 } = produto
+
+			let { detalhes: { fabricante: f, modelo = 'Não Informado' } } = produto
+
+			console.log(f, modelo)
+
+
+
+		</script>
+
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
