@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+
+            // requisições http
+            let resposta = {}
+            let promessa = new Promise((resolve, reject) => {
+                try {
+
+                    setTimeout(() => {
+
+                        //throw new Error('Opa, houve um erro!')
+                        resposta = { dados: { msg: 'Recuperamos os dados com sucesso!'}}
+                        resolve('Sucesso')
+                    }, 3000)
+
+                } catch(e) {
+
+                    setTimeout(() => {
+                        reject(e)
+                    }, 3000)
+
+                }
+            })
+
+            console.log(promessa)
+
+            setTimeout(() => {
+                console.log(promessa)
+                console.log(resposta)
+                    }, 5000)
+
+            console.log(resposta)
+            console.log(resposta)
+            console.log(resposta)
+
+        </script>
+    </body>
+</html>
